@@ -1,0 +1,33 @@
+
+h1 { /* seletor */
+    color: brown;  /* propriedade */
+    /* atributo */
+    font-family: Arial; /* fonte */
+    border: 2px solid black; /* Borda:  */
+    background: goldenrod;
+
+}
+h2 {
+    color: chocolate;
+    
+}
+p {
+    color: rgb(45, 45, 168);
+    font-family: Georgia;
+}
+ul{
+    color: rgb(20, 128, 6);
+}
+
+#t1 {
+    background: goldenrod;
+}
+#t2 {
+    background: coral;
+}
+.subT1 {
+    color: rgb(156, 115, 3);
+}
+.subT2 {
+    color: rgb(173, 52, 5);
+}
