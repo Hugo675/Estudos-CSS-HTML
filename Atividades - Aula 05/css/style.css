@@ -22,17 +22,19 @@ input {
     display: inline-block;
     list-style: none;
     line-height: 35px;
-    min-width: 1.70px;
-    width: 10%;
+    min-width: 2px;
+    width: 15%;
     height: 35%;
-    margin: 5px;
-    padding: 5px;
+    margin: 20px;
+    padding: 10px;
     text-decoration: none;
-    color:white;
+    color:rgb(5, 4, 53);
+    background: #ffcb1e;
+    border-radius: 10px;
 }
 
 .menu1:hover {
-    background: #2087db;
+    background: #fcfcfc;
 }
 
 main {
