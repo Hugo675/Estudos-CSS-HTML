@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: dodgerblue;
+
+        }
+
+        #divStatic {
+            position: relative;
+            /* width: 100px;
+            height: 100px;
+            background: dodgerblue; */
+
+        }
+
+        #divRelative {
+            position: relative;
+            left: 500px;
+            top: 0px; /* desce */
+            bottom: ;/* sobe */
+        }
+        
+        #divFixed {
+            position: fixed;
+
+        }
+
+        #pai {
+            position: relative;
+        }
+        #divAbsolut {
+            position: absolute;
+            left: 0px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            bottom: 0;
+            right: 0;
+        }
+
+        #divSticky {
+            position: sticky;
+            top: 0;
+        }
+
+        /* Media Query */
+        @media (max-width: 570px) {
+            div {
+                width: 50px;
+                height: 50px;
+                background: goldenrod;
+            }
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    
+    <h1> Posições </h1>
+    <h2> Posição Estática </h2>
+    
+    <div id="divStatic">position Static</div>
+
+    <h2> Posição Relativa </h2>
+    <div id="divRelative"> Posição Relativa </div>
+
+    <h2>Posição Fixa</h2>
+    <div id="divFixed">Posição Fixa</div>
+
+    <h2>Posição Absoluta</h2>
+    <div id="pai">
+        <div id="divAbsolut">Posição Absoluta<div>
+    </div>
+
+    <h2> Posição Pegajosa </h2>
+    <div id="divSticky">Posição Sticky</div>
+
+</body>
+</html>
