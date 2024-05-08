@@ -15,24 +15,24 @@ input {
 }
 
 .menu {
-    background: white;
+    background: rgb(32, 28, 77);
     text-align: center;
 }
 .menu1 {
     display: inline-block;
     list-style: none;
-    line-height: 40px;
+    line-height: 35px;
     min-width: 1.70px;
-    width: 19.6%;
-    height: 40%;
+    width: 10%;
+    height: 35%;
     margin: 5px;
     padding: 5px;
     text-decoration: none;
-    color: dodgerblue;
+    color:white;
 }
 
 .menu1:hover {
-    background: #ffd900;
+    background: #2087db;
 }
 
 main {
@@ -41,6 +41,7 @@ main {
     padding: 20px 70px;
     background-color: white;
     border-radius: 10px;
+    
 }
 
 #banner h1{
