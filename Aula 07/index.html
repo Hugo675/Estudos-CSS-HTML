@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bt-bnt: url();
+            --bg-site: #d0d0d0;
+        }
+        .dark {
+            --bf-btn: url();
+            --bg-site: #3b3b3b;
+
+        }
+        body {
+            background: var(--bg-site);
+        }
+
+
+        #btn {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background:white var(--bf-btn) no-repeat center center;
+            cursor: pointer;
+            transition: backgraund 0.9s;
+        }
+        section {
+            height: 100px;
+            blac
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="btn" onclick="toggleMode()"></div>
+
+    <section></section>
+
+    <script>
+        function toggleMode() {
+            const html = document.documentElement;
+            html.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

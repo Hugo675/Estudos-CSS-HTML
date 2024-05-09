@@ -13,6 +13,17 @@ body {
 input {
     display: none;
 }
+label[for="botao"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: black;
+}
 
 .menu {
     background: rgb(32, 28, 77);
@@ -22,10 +33,9 @@ input {
     display: inline-block;
     list-style: none;
     line-height: 35px;
-    min-width: 2px;
-    width: 15%;
+    min-width: 182px;
     height: 35%;
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     text-decoration: none;
     color:rgb(5, 4, 53);
@@ -122,4 +132,19 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+@media (max-width: 1170px) {
+    .menu {
+        display: none;
+    }
+    .menu1 {
+        display: block;
+        width: 100%;
+    }
+    label[for="botao"] {
+        display: flex;
+    }
+    #botao:checked ~ .menu {
+        display: block;
+    }
 }
