@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #bglight {
+            background-image: url(imagens/bg-desktop-light.jpg);
+        }
+        :root {/* TEMA CLARO */
+            --bg-btn:url('moon-stars.png');
+            --bg-site: url(imagens/bg-desktop-light.jpg);
+        }
+        .dark { /* TEMA ESCURO */
+            --bg-btn: url('Sun-16..png');
+            --bg-site: url(imagens/bg-desktop.jpg);
+        }
+        body {
+            background: var(--bg-site);
+        }
+        #btn {
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            border: 1px solid black;
+            background: white var(--bg-btn) no-repeat center center;
+            cursor: pointer;
+            transition: 0.9s;
+            align-content: center;
+        }
+
+        section {
+            width: 100%;
+            text-align: center;  
+        }
+        #imgHugo {
+            border: 1px solid black;
+            border-radius: 100%;
+            margin-top: 40px;
+        }
+        #nome {
+            color: rgb(8, 155, 155);
+        }
+        main {
+            height: 50vh;
+        }
+           
+        nav {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100px;
+            margin: auto;    
+        }
+        nav a {
+            flex-direction: column;
+            flex: 1;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            border 1px;
+            border-radius: 5px;
+            color: aliceblue;
+            background: rgba(153, 150, 150, 0.432);
+            margin-bottom: 8px;
+            height: 30px;   
+        }
+        footer {
+            text-align: center;
+            background: rgb(153, 150, 150, 0.432);
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function toggleMode() {
+            const html = document.documentElement;
+            html.classList.toggle("dark");
+        }
+    </script>
+    <section>
+        <img id="imgHugo" src="imagens/imagem hugo.jpg" alt="">
+        <p id="nome">@hugo_carvalho.3</p>
+        <div id="btn" onclick="toggleMode()"></div>
+    </section>
+   <main>
+        <header>
+            <nav>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
+            </nav>
+        </header>
+    </main>
+    <footer>
+        <p>Desenvolvido por Hugo</p>
+    </footer>
+</body>
+</html>
