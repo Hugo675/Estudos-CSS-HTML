@@ -12,15 +12,15 @@
             background-image: url(imagens/bg-desktop-light.jpg);
         }
         :root {/* TEMA CLARO */
-            --bg-btn:url('moon-stars.png');
+            --bg-btn:url('imagens/moon-stars.png');
             --bg-site: url(imagens/bg-desktop-light.jpg);
         }
         .dark { /* TEMA ESCURO */
-            --bg-btn: url('Sun-16..png');
+            --bg-btn: url('imagens/Sun-16..png');
             --bg-site: url(imagens/bg-desktop.jpg);
         }
         body {
-            background: var(--bg-site);
+            background: var(--bg-site) no-repeat center center/cover;
         }
         #btn {
             height: 30px;
@@ -31,17 +31,25 @@
             cursor: pointer;
             transition: 0.9s;
             align-content: center;
+            margin: 0 auto;
+            
         }
 
         section {
             width: 100%;
             text-align: center;  
         }
-        #imgHugo {
+        #img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             border: 1px solid black;
-            border-radius: 100%;
-            margin-top: 40px;
+            background: url(imagens/imagem\ hugo.jpg) no-repeat center center/cover;
+            margin: 0 auto;
+
         }
+        
+
         #nome {
             color: rgb(8, 155, 155);
         }
@@ -86,7 +94,8 @@
         }
     </script>
     <section>
-        <img id="imgHugo" src="imagens/imagem hugo.jpg" alt="">
+        <!-- <img id="imgHugo" src="imagens/imagem hugo.jpg" alt=""> -->
+        <div id="img"></div>
         <p id="nome">@hugo_carvalho.3</p>
         <div id="btn" onclick="toggleMode()"></div>
     </section>
